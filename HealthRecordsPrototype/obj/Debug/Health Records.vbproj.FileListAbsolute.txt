@@ -1,0 +1,52 @@
+C:\Users\Cole\source\repos\WindowsApp1\bin\Debug\WindowsApp1.exe.config
+C:\Users\Cole\source\repos\WindowsApp1\bin\Debug\WindowsApp1.exe
+C:\Users\Cole\source\repos\WindowsApp1\bin\Debug\WindowsApp1.pdb
+C:\Users\Cole\source\repos\WindowsApp1\bin\Debug\WindowsApp1.xml
+C:\Users\Cole\source\repos\WindowsApp1\obj\Debug\Health Records.vbprojAssemblyReference.cache
+C:\Users\Cole\source\repos\WindowsApp1\obj\Debug\WindowsApp1.Login.resources
+C:\Users\Cole\source\repos\WindowsApp1\obj\Debug\WindowsApp1.Resources.resources
+C:\Users\Cole\source\repos\WindowsApp1\obj\Debug\Health Records.vbproj.GenerateResource.cache
+C:\Users\Cole\source\repos\WindowsApp1\obj\Debug\Health Records.vbproj.CoreCompileInputs.cache
+C:\Users\Cole\source\repos\WindowsApp1\obj\Debug\WindowsApp1.exe
+C:\Users\Cole\source\repos\WindowsApp1\obj\Debug\WindowsApp1.xml
+C:\Users\Cole\source\repos\WindowsApp1\obj\Debug\WindowsApp1.pdb
+C:\Users\Cole\source\repos\WindowsApp1\obj\Debug\WindowsApp1.CreateAccount.resources
+C:\Users\Cole\source\repos\WindowsApp1\obj\Debug\WindowsApp1.Home.resources
+C:\Users\Cole\source\repos\WindowsApp1\obj\Debug\WindowsApp1.AddPatient.resources
+C:\Users\Cole\Documents\WindowsApp1\bin\Debug\WindowsApp1.exe.config
+C:\Users\Cole\Documents\WindowsApp1\bin\Debug\WindowsApp1.exe
+C:\Users\Cole\Documents\WindowsApp1\bin\Debug\WindowsApp1.pdb
+C:\Users\Cole\Documents\WindowsApp1\bin\Debug\WindowsApp1.xml
+C:\Users\Cole\Documents\WindowsApp1\obj\Debug\Health Records.vbprojAssemblyReference.cache
+C:\Users\Cole\Documents\WindowsApp1\obj\Debug\WindowsApp1.AddPatient.resources
+C:\Users\Cole\Documents\WindowsApp1\obj\Debug\WindowsApp1.CreateAccount.resources
+C:\Users\Cole\Documents\WindowsApp1\obj\Debug\WindowsApp1.Home.resources
+C:\Users\Cole\Documents\WindowsApp1\obj\Debug\WindowsApp1.Login.resources
+C:\Users\Cole\Documents\WindowsApp1\obj\Debug\WindowsApp1.Resources.resources
+C:\Users\Cole\Documents\WindowsApp1\obj\Debug\Health Records.vbproj.GenerateResource.cache
+C:\Users\Cole\Documents\WindowsApp1\obj\Debug\Health Records.vbproj.CoreCompileInputs.cache
+C:\Users\Cole\Documents\WindowsApp1\obj\Debug\WindowsApp1.exe
+C:\Users\Cole\Documents\WindowsApp1\obj\Debug\WindowsApp1.xml
+C:\Users\Cole\Documents\WindowsApp1\obj\Debug\WindowsApp1.pdb
+C:\Users\Cole\Documents\WindowsApp1\bin\Debug\HealthRecordsDB.mdf
+C:\Users\Cole\Documents\WindowsApp1\bin\Debug\HealthRecordsDB_log.ldf
+C:\Users\Cole\Documents\HealthRecordsPrototype\bin\Debug\HealthRecordsDB.mdf
+C:\Users\Cole\Documents\HealthRecordsPrototype\bin\Debug\HealthRecordsDB_log.ldf
+C:\Users\Cole\Documents\HealthRecordsPrototype\bin\Debug\WindowsApp1.exe.config
+C:\Users\Cole\Documents\HealthRecordsPrototype\bin\Debug\WindowsApp1.exe
+C:\Users\Cole\Documents\HealthRecordsPrototype\bin\Debug\WindowsApp1.pdb
+C:\Users\Cole\Documents\HealthRecordsPrototype\bin\Debug\WindowsApp1.xml
+C:\Users\Cole\Documents\HealthRecordsPrototype\obj\Debug\Health Records.vbprojAssemblyReference.cache
+C:\Users\Cole\Documents\HealthRecordsPrototype\obj\Debug\WindowsApp1.AddPatient.resources
+C:\Users\Cole\Documents\HealthRecordsPrototype\obj\Debug\WindowsApp1.CreateAccount.resources
+C:\Users\Cole\Documents\HealthRecordsPrototype\obj\Debug\WindowsApp1.Home.resources
+C:\Users\Cole\Documents\HealthRecordsPrototype\obj\Debug\WindowsApp1.Login.resources
+C:\Users\Cole\Documents\HealthRecordsPrototype\obj\Debug\WindowsApp1.Resources.resources
+C:\Users\Cole\Documents\HealthRecordsPrototype\obj\Debug\Health Records.vbproj.GenerateResource.cache
+C:\Users\Cole\Documents\HealthRecordsPrototype\obj\Debug\Health Records.vbproj.CoreCompileInputs.cache
+C:\Users\Cole\Documents\HealthRecordsPrototype\obj\Debug\WindowsApp1.exe
+C:\Users\Cole\Documents\HealthRecordsPrototype\obj\Debug\WindowsApp1.xml
+C:\Users\Cole\Documents\HealthRecordsPrototype\obj\Debug\WindowsApp1.pdb
+C:\Users\Cole\Documents\HealthRecordsPrototype\obj\Debug\WindowsApp1.PatientRecord.resources
+C:\Users\Cole\Documents\HealthRecordsPrototype\obj\Debug\WindowsApp1.OrderPrescription.resources
+C:\Users\Cole\Documents\HealthRecordsPrototype\obj\Debug\WindowsApp1.Payment.resources
