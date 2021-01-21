@@ -1,0 +1,460 @@
+<html>
+ <body>
+	<script language ="javascript">
+		function calculate()
+		{
+			var cleat = 175;
+			var jersey = 65;
+			var ball = 40;
+			var shorts = 35;
+			var guards = 20;
+			var shoes = 175;
+			var totalCost = 0;
+			if(document.form1.qtyCleats.value < 0 || document.form1.qtyJersey.value < 0 || document.form1.qtyBall.value < 0 || document.form1.qtyShorts.value < 0 || document.form1.qtyGuards.value < 0 || document.form1.qtyShoes.value < 0)
+			{
+				alert("Cannot have a negative amount of Quantity!");
+			}
+			else
+			{
+				document.form1.costCleats.value = document.form1.qtyCleats.value * cleat;
+				document.form1.costJersey.value = document.form1.qtyJersey.value * jersey;
+				document.form1.costBall.value = document.form1.qtyBall.value * ball;
+				document.form1.costShorts.value = document.form1.qtyShorts.value * shorts;
+				document.form1.costGuards.value = document.form1.qtyGuards.value * guards;
+				document.form1.costShoes.value = document.form1.qtyShoes.value * shoes;
+			
+				totalCost = parseInt(document.form1.costCleats.value) + parseInt(document.form1.costJersey.value) + parseInt(document.form1.costBall.value) + parseInt(document.form1.costShorts.value) + parseInt(document.form1.costGuards.value) + parseInt(document.form1.costShoes.value);
+				document.form1.txtTotal.value = totalCost;
+				return totalCost;
+			}
+		}
+		
+		
+		function checkFields()
+		{
+			errorFlag = false;
+			errorMsg = "";
+			confirmMsg = "";
+			//name
+			if(document.form1.txtName.value =="")
+			{
+				erroFlag = true;
+				errorMsg = errorMsg + "Please Enter your Name! \n";
+			}
+			else
+			{
+				confirmMsg = confirmMsg + "Name: " + document.form1.txtName.value + "<br>"; 
+			}
+			//email
+			if(document.form1.txtEmail.value == "")
+			{
+				errorFlag = true;
+				errorMsg = errorMsg + "Please enter your Email! \n";
+			}
+			else
+			{
+				confirmMsg = confirmMsg + "Email: " + document.form1.txtEmail.value + "<br>";
+			}
+			//phone
+			if(document.form1.txtPhone.value == "")
+			{
+				errorFlag = true;
+				errorMsg = errorMsg + "Please Enter your phone number! \n";
+			}
+			else
+			{
+				confirmMsg = confirmMsg + "Phone: " + document.form1.txtPhone.value +"<br>";
+			}
+			//address
+			if(document.form1.txtAddressB.value == "")
+			{
+				errorFlag = true;
+				errorMsg = errorMsg + "Please fill in your address! \n";
+			}
+			//city
+			if(document.form1.txtCityB.value =="")
+			{
+				errorFlag = true;
+				errorMsg = errorMsg + "Please enter your city! \n";
+			}
+			//state
+			if(document.form1.txtStateB.value =="")
+			{
+				errorFlag = true;
+				errorMsg = errorMsg + "Please select a state! \n";
+			}
+			//zip
+			if(document.form1.txtZipB.value =="")
+			{
+				errorFlag = true;
+				errorMsg = errorMsg + "Please enter your Zip! \n";
+			}
+			//ship address
+			if(document.form1.txtAddressS.value =="")
+			{
+				errorFlag = true;
+				errorMsg = errorMsg + "Please enter your shiping Address! \n";
+			}
+			//ship city
+			if(document.form1.txtCityS.value == "")
+			{
+				errorFlage = true;
+				errorMsg = errorMsg + "Please enter in your state! \n";
+			}
+			//ship state
+			if(document.form1.txtStateS.value =="")
+			{
+				errorFlag = true;
+				errorMsg = errorMsg + "Please select a state! \n";
+			}
+			//ship zip
+			if(document.form1.txtZipS.value =="")
+			{
+				errorFlag = true;
+				errorMsg = errorMsg + "Please enter your Zip \n"
+			}
+			else
+			{
+				confirmMsg = confirmMsg + "Shipping to: " + document.form1.txtAddressS.value + ", " + document.form1.txtCityS.value + " " +document.form1.txtStateS.value + " " +document.form1.txtZipS.value + "<br>";
+			}
+			//Credit card
+			if(document.form1.txtCard.value == "")
+			{
+				errorFlag = true;
+				errorMsg = errorMsg + "Please enter in your credit card! \n";
+			}
+			//CVV
+			if(document.form1.txtCvv.value =="")
+			{
+				errorFlag = true;
+				errorMsg = errorMsg + "Please enter the CVV of your credit card! \n";
+			}
+			//expiration date
+			if(document.form1.txtDate.value =="")
+			{
+				errorFlag = true;
+				errorMsg = errorMsg + "Please enter the expiration date of your credit card! \n";
+			}
+			//no size cleats
+			if(document.form1.qtyCleats.value > 0 && document.form1.cleatSize.value == "")
+			{
+				errorFlag = true;
+				errorMsg = errorMsg + "Please select a size for your cleats! \n";
+			}
+			else if(document.form1.qtyCleats.value > 0 && document.form1.cleatSize.value != "")
+			{
+				confirmMsg = confirmMsg + "Cleats size: " + document.form1.cleatSize.value + "<br>";
+			}
+			//no size jersey
+			if(document.form1.qtyJersey.value > 0 && document.form1.jerseySize.value == "")
+			{
+				errorFlag = true;
+				errorMsg = errorMsg + "Please select a size for your jersey! \n";
+			}
+			else if(document.form1.qtyJersey.value > 0 && document.form1.jerseySize.value !="")
+			{
+				confirmMsg = confirmMsg + "Jersey Size: " + document.form1.jerseySize.value + "<br>";
+			}
+			// no ball size
+			if(document.form1.qtyBall.value > 0 && document.form1.ballSize.value == "")
+			{
+				errorFlag = true;
+				errorMsg = errorMsg + "Please select a size for your ball! \n";
+			}
+			else if(document.form1.qtyBall.value > 0 && document.form1.ballSize.value !="")
+			{
+				confirmMsg = confirmMsg + "BallSize: " + document.form1.ballSize.value + "<br>";
+			}
+			//no shorts size.
+			if(document.form1.qtyShorts.value > 0 && document.form1.shortSize.value =="")
+			{
+				errorFlag = true;
+				errorMsg = errorMsg + "Please select a size for your shorts! \n";
+			}
+			else if(document.form1.qtyShorts.value > 0 && document.form1.shortSize.value !="")
+			{
+				confirmMsg = confirmMsg + "Short size: " + document.form1.shortSize.value + "<br>";
+			}
+			//no guards size
+			if(document.form1.qtyGuards.value > 0 && document.form1.shinSize.value =="")
+			{
+				errorFlag = true;
+				errorMsg = errorMsg + "Please select your shin size! \n";
+			}
+			else if(document.form1.qtyGuards.value > 0 && document.form1.shinSize.value !="")
+			{
+				confirmMsg = confirmMsg + "Shin Guards size: " + document.form1.shinSize.value +"<br>";
+			}
+			//no shoe size
+			if(document.form1.qtyShoes.value > 0 && document.form1.shoeSize.value =="")
+			{
+				errorFlag = true;
+				errorMsg = errorMsg + "Please select a shoe size! \n";
+			}
+			else if(document.form1.qtyShoes.value > 0 && document.form1.shoeSize.value !="")
+			{
+				confirmMsg = confirmMsg + "Shoe Size: " + document.form1.shoeSize.value + "<br>";
+				
+			}
+			
+			//error message
+			if(errorFlag == true)
+			{
+				alert(errorMsg);
+			}
+			else
+			{
+				var total = 0; 
+				total = calculate();
+				if(total == 0)
+				{
+					alert("You didn't order any products")
+				}
+				else
+				{
+					confirmMsg = confirmMsg + "Your Order has been Placed!<br> Your total cost is: $" + total;
+					document.write(confirmMsg);
+				}
+			}
+		}
+		
+		function billToShip()
+		{
+			if(document.form1.chkShip.checked == true)
+			{
+				document.form1.txtAddressS.value = document.form1.txtAddressB.value;
+				document.form1.txtCityS.value = document.form1.txtCityB.value;
+				document.form1.txtStateS.value = document.form1.txtStateB.value;
+				document.form1.txtZipS.value = document.form1.txtZipB.value;
+			}
+			else 
+			{
+				document.form1.txtAddressS.value = "";
+				document.form1.txtCityS.value = "";
+				document.form1.txtStateS.value = "";
+				document.form1.txtZipS.value = "";
+			}
+		}
+	
+	</script>
+  <form name = "form1" method ="post">
+	<center><table border = 1; width = 825; height = 500></center>
+		<tr >
+			<td valign = "top" colspan = 2 height = 20%>
+				
+				<h2> <center> Order Form </center> </h2>
+				Name: <input type = "text" name = "txtName" size = 40>*
+				Email: <input type = "text" name = "txtEmail" size = 20>*
+				Phone: <input type = "text" name = "txtPhone" size = 15>*
+				</td>
+			</tr>
+			
+			<tr height = 25%>
+				<td valign = "top" width = 50%>
+				 <h4> Billing Address</h4>
+				&nbsp;Address: <input type = "text" name = "txtAddressB" size = 40>*<br><br style="line-height:2px;"/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; City: <input type = "text" name = "txtCityB" size = 12>*
+				State:
+				<select name="txtStateB">
+					<option> </option>
+					<option value="AL">AL</option>
+					<option value="AK">AK</option>
+					<option value="AZ">AZ</option>
+					<option value="AR">AR</option>
+					<option value="CA">CA</option>
+					<option value="CO">CO</option>
+					<option value="CT">CT</option>
+					<option value="DE">DE</option>
+					<option value="DC">DC</option>
+					<option value="FL">FL</option>
+					<option value="GA">GA</option>
+					<option value="HI">HI</option>
+					<option value="ID">ID</option>
+					<option value="IL">IL</option>
+					<option value="IN">IN</option>
+					<option value="IA">IA</option>
+					<option value="KS">KS</option>
+					<option value="KY">KY</option>
+					<option value="LA">LA</option>
+					<option value="ME">ME</option>
+					<option value="MD">MD</option>
+					<option value="MA">MA</option>
+					<option value="MI">MI</option>
+					<option value="MN">MN</option>
+					<option value="MS">MS</option>
+					<option value="MO">MO</option>
+					<option value="MT">MT</option>
+					<option value="NE">NE</option>
+					<option value="NV">NV</option>
+					<option value="NH">NH</option>
+					<option value="NJ">NJ</option>
+					<option value="NM">NM</option>
+					<option value="NY">NY</option>
+					<option value="NC">NC</option>
+					<option value="ND">ND</option>
+					<option value="OH">OH</option>
+					<option value="OK">OK</option>
+					<option value="OR">OR</option>
+					<option value="PA">PA</option>
+					<option value="RI">RI</option>
+					<option value="SC">SC</option>
+					<option value="SD">SD</option>
+					<option value="TN">TN</option>
+					<option value="TX">TX</option>
+					<option value="UT">UT</option>
+					<option value="VT">VT</option>
+					<option value="VA">VA</option>
+					<option value="WA">WA</option>
+					<option value="WV">WV</option>
+					<option value="WI">WI</option>
+					<option value="WY">WY</option>
+				</select> *
+				Zip: <input type = "text" name = "txtZipB" size = 5>*<br> <br style = "line-height:2px;"/>
+				
+				<input type = "checkbox" name = "chkShip" onclick ="billToShip()">Ship to Billing Address <br>
+				</td>
+				
+				<td valign = "top">
+					<h4> Shipping Address</h4>
+					&nbsp;Address: <input type = "text" name = "txtAddressS" size = 40>*<br><br style="line-height:2px;"/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; City: <input type = "text" name = "txtCityS" size = 12>*
+				State:
+				<select name="txtStateS">
+					<option> </option>
+					<option value="AL">AL</option>
+					<option value="AK">AK</option>
+					<option value="AZ">AZ</option>
+					<option value="AR">AR</option>
+					<option value="CA">CA</option>
+					<option value="CO">CO</option>
+					<option value="CT">CT</option>
+					<option value="DE">DE</option>
+					<option value="DC">DC</option>
+					<option value="FL">FL</option>
+					<option value="GA">GA</option>
+					<option value="HI">HI</option>
+					<option value="ID">ID</option>
+					<option value="IL">IL</option>
+					<option value="IN">IN</option>
+					<option value="IA">IA</option>
+					<option value="KS">KS</option>
+					<option value="KY">KY</option>
+					<option value="LA">LA</option>
+					<option value="ME">ME</option>
+					<option value="MD">MD</option>
+					<option value="MA">MA</option>
+					<option value="MI">MI</option>
+					<option value="MN">MN</option>
+					<option value="MS">MS</option>
+					<option value="MO">MO</option>
+					<option value="MT">MT</option>
+					<option value="NE">NE</option>
+					<option value="NV">NV</option>
+					<option value="NH">NH</option>
+					<option value="NJ">NJ</option>
+					<option value="NM">NM</option>
+					<option value="NY">NY</option>
+					<option value="NC">NC</option>
+					<option value="ND">ND</option>
+					<option value="OH">OH</option>
+					<option value="OK">OK</option>
+					<option value="OR">OR</option>
+					<option value="PA">PA</option>
+					<option value="RI">RI</option>
+					<option value="SC">SC</option>
+					<option value="SD">SD</option>
+					<option value="TN">TN</option>
+					<option value="TX">TX</option>
+					<option value="UT">UT</option>
+					<option value="VT">VT</option>
+					<option value="VA">VA</option>
+					<option value="WA">WA</option>
+					<option value="WV">WV</option>
+					<option value="WI">WI</option>
+					<option value="WY">WY</option>
+				</select>*
+				Zip: <input type = "text" name = "txtZipS" size = 5>*<br> <br style = "line-height:4px;"/>
+			</td>
+		</tr>
+		
+		<tr >
+			<td valign = "top" colspan = 2 width =50%>
+				Soccer Cleats($175) Quantity: <input type = "number" min = "0" max ="10" name = "qtyCleats" size ="1" value ="0">
+				Cost: <input type = "text" name ="costCleats" size = 10 disabled value = "0"> 
+				Size: <select name = "cleatSize">
+						<option> </option>
+						<option value ="8">8</option>
+						<option value ="9">9</option>
+						<option value ="10">10</option>
+						<option value ="11">11</option>
+						<option value ="12">12</option>
+						<option value ="13">13</option>
+					  </select> 
+					  Credit Card #: <input type ="text" name ="txtCard" size = 16>*<br><br style="line-height:4px;"/>
+				
+				Soccer Jersey($65) &nbsp;&nbsp;Quantity: <input type ="number" min ="0" max ="10" name = "qtyJersey" size =1 value ="0">
+				Cost: <input type = "text" name ="costJersey" size = 10 disabled value ="0"> 
+				Size: <select name = "jerseySize">
+						<option> </option>
+						<option value = "small">S</option>
+						<option value ="medium">M</option>
+						<option value = "large">L</option>
+						</select> 
+						CVV:<input type ="text" name ="txtCvv"size =3>* (Located on the back of your card.)<br><br style="line-height:4px;"/>
+				
+				Soccer Ball($40)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity: <input type = "number" min ="0" max ="10" name = "qtyBall" size = 1 value ="0">
+				Cost:<input type = "text" name = "costBall" size = 10 disabled value ="0"> 
+				Size: <select name ="ballSize">
+						<option> </option>
+						<option value ="1"> 1</option>
+						<option value ="2"> 2</option>
+						<option value ="3"> 3</option>
+						<option value ="4"> 4</option>
+						<option value ="5"> 5</option>
+						</select>
+						Expiration Date: <input type = "text" name ="txtDate" size = "5">*<br><br style="line-height:4px;"/>
+				
+				Soccer Shorts($35) &nbsp;&nbsp;Quantity: <input type = "number" min = "0" max ="10" name = "qtyShorts" size = 1 value ="0">
+				Cost: <input type = "text" name = "costShorts" size = 10 disabled value ="0"> 
+				Size: <select name = "shortSize">
+						<option> </option>
+						<option value = "small">S</option>
+						<option value ="medium">M</option>
+						<option value = "large">L</option>
+						</select> 
+						Delivery Instructions (Optional)<br><br style ="line-height:4px;"/>
+						<textarea name ="instructions" rows = 6 cols =43 style ="float: right;"></textarea>
+				
+				Shin Guards($20) &nbsp;&nbsp;&nbsp;&nbsp;Quantity: <input type = "number" min ="0" max ="10" name ="qtyGuards" size = 1 value = "0">
+				Cost: <input type = "text" name ="costGuards" size = 10 disabled value = "0"> 
+				Size: <select name = "shinSize">
+						<option> </option>
+						<option value = "small">S</option>
+						<option value ="medium">M</option>
+						<option value = "large">L</option>
+						</select> <br><br style="line-height:4px;"/>
+				
+				Indoor Shoes($175) &nbsp;Quantity: <input type = "number" min ="0" max ="10" name ="qtyShoes" size =1 value ="0">
+				Cost: <input type = "text" name = "costShoes" size = 10 disabled value ="0">
+				Size: <select name = "shoeSize">
+						<option> </option>
+						<option value ="8">8</option>
+						<option value ="9">9</option>
+						<option value ="10">10</option>
+						<option value ="11">11</option>
+						<option value ="12">12</option>
+						<option value ="13">13</option>
+					  </select> <br><br style="line-height:4px;"/>
+				Total Cost: <input type = "text" name ="txtTotal" size = 10 disabled value ="0"> <br><br style ="line-height:4px;"/>
+				<input type ="button" name = "btnCalculate" value = "Calculate Price" onclick = "calculate()">
+				<input type ="button" name = "btnSubmit" value = "Submit" onclick="checkFields()">
+				<input type = "reset" name ="btnReset" value = "Cancel"><br><br>
+				
+				<a href = "company.html"> Company's HomePage</a>
+				
+			</td>
+		</tr>	
+	</table>
+  </form>
+ </body>
+</html>
